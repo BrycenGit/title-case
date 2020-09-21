@@ -10,4 +10,7 @@ describe('#title_case') do
     expect(title_case("hello there friends")).to(eq("Hello There Friends"))
   end
 
+  it("doesn't capitalize the fist letter of words 4 letters or less") do
+    expect(title_case("hello my friends")).to(eq("Hello my Friends"))
+  end
 end
